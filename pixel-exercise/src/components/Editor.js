@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Editor.css';
 
 import DrawingPanel from './DrawingPanel';
 
@@ -13,14 +14,14 @@ function Editor() {
     }
 
     return (
-        <section>
+        <section className='editor'>
             <h1>Pixel editor</h1>
             { configuration && <h2>Ange dimensioner</h2>}
             { configuration && <form> { /** Om configation är true, visa <form> */}
                 <input type="text" placeholder="Bredd" defaultValue={ panelWidth }
-                    onKeyUp={ (event) => setPanelWidth(event.target.value) }/>
+                    onKeyUp={ (event) => setPanelWidth(parseInt(event.target.value)) }/>
                 <input type="text" placeholder="Höjd" defaultValue={ panelHeight }
-                    onKeyUp={ (event) => setPanelHeight(event.target.value) } />
+                    onKeyUp={ (event) => setPanelHeight(parseInt(event.target.value)) } />
                 <button onClick={ initializeDrawing }>Börja rita</button>
             </form> }
             { !configuration && <DrawingPanel width={ panelWidth } height={ panelHeight } /> }
