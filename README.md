@@ -6,6 +6,10 @@ Inlämningsuppgift: https://gist.github.com/zocom-christoffer-wallenberg/d325f34
 
 ## Artiklar
 
+Local storage: https://javascript.info/localstorage
+
 ## Videor
 
 ## Inspelningar
+
+https://funet-my.sharepoint.com/:f:/g/personal/christoffer_wallenberg_folkuniversitetet_se/EtZD6gz9DlZIrQjeZjfMuIsBKHh2_ApblaN-yu-M19yQVA?e=5i3hxX
